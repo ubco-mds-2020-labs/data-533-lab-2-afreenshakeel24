@@ -67,7 +67,7 @@ class rpsgame(rpshelp):
             #Code to print instructions ends here
             
             #Code for player move starts here
-            print("\n Ready... Steady... GO! \n \n")
+            print()
             
             #Ready Steady Go image code starts here
             Ready_Steady_Go = cv2.imread("Images/Ready_Steady_Go.png")
@@ -102,7 +102,6 @@ class rpsgame(rpshelp):
             
             #Code for computer move starts here
             print("Computer making a move...")
-            time.sleep(2)
             comp_move = random.randint(0, 2)
             if comp_move == 0: print("Computer chooses... Rock")
             elif comp_move == 1: print("Computer chooses... Paper")
