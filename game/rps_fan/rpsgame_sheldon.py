@@ -1,7 +1,25 @@
+# ---
+# jupyter:
+#   jupytext:
+#     text_representation:
+#       extension: .py
+#       format_name: light
+#       format_version: '1.5'
+#       jupytext_version: 1.6.0
+#   kernelspec:
+#     display_name: Python 3
+#     language: python
+#     name: python3
+# ---
+
 from .rpshelp_sheldon import rpshelp_sheldon
 import time
 import random
 import os
+import image
+import cv2
+import matplotlib.pyplot as plt
+
 class rpsgame_sheldon(rpshelp_sheldon):
     def __init__(self):
         rpshelp_sheldon.__init__(self)
